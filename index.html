@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple One-Page Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">Nexa</a>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="darkToggle" class="btn tiny">Dark</button>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Simple, Fast, Clean — a tiny website made with HTML/CSS/JS</h1>
+        <p class="lede">Built with separate JS files for modularity. No build tools required.</p>
+        <div class="actions">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn ghost" href="#contact">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="panel">
+      <div class="container">
+        <h2>About</h2>
+        <p>I make small games and experiments. This demo shows a responsive layout, a mobile menu, and a dark-mode toggle — split into multiple JS files.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="panel">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Project One</h3>
+            <p>Short description. Add links or screenshots here.</p>
+          </article>
+          <article class="card">
+            <h3>Project Two</h3>
+            <p>Short description. Add links or screenshots here.</p>
+          </article>
+          <article class="card">
+            <h3>Project Three</h3>
+            <p>Short description. Add links or screenshots here.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="panel contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Drop an email or link to your socials.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Load projects easily</small>
+    </div>
+  </footer>
+
+  <!-- Load scripts (multiple files) -->
+  <script src="js/nav.js" defer></script>
+  <script src="js/dark.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
